@@ -31,7 +31,7 @@
                 </h:commandLink>
             </h:form>     
 <hr/>            
-<h:form>
+<h:form target="_new" >
   <p:commandButton id="downloadLink" value="Download" ajax="false" actionListener="#{customer.getPDF}">
     <p:fileDownload value="#{customer.getPDF}" />
   </p:commandButton>
