@@ -37,6 +37,16 @@
   </p:commandButton>
 </h:form>
 
-</h:body>
+<hr/>            
+
+<h:form target="_new" >
+    <p:growl id="growl" life="2000" />
+    <p:commandLink id="nonAjax" actionListener="#{customer.getPDF}" ajax="false">
+        <h:graphicImage value="/images/pdf.jpg" style ="border: 0px; width:50px; height:45px;" />
+    </p:commandLink>
+</h:form>
+<hr/>            
+
+ </h:body>
 </html>
 
